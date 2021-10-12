@@ -55,11 +55,6 @@ function About() {
                         {Skills.join(", ")}
                     </Col>
                 </Row>
-                <Row className="justify-content-center">
-                    <Col xs={4} md={6}>
-                        <a href="https://github.com/gboicheff"><Image style={iconStyle} src={GithubIcon} fluid/></a>
-                    </Col>
-                </Row>
             </Container>
         </div>
     );
