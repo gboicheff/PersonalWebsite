@@ -1,15 +1,18 @@
-import { Container , Navbar, Nav, NavItem, Row} from 'react-bootstrap';
-import {useEffect, useState} from "react";
+import { Container , Navbar, Nav, Image} from 'react-bootstrap';
 import {withRouter} from "react-router"
-import {Link, NavLink} from "react-router-dom"
+import {NavLink} from "react-router-dom"
+import GithubIcon from "../imgs/GitHub-Mark-Light-64px.png"
+
 
 function MyNav(props) {
-    function setLocation(location){
-        props.setLocation(location)
-    }
 
     const textStyle = {
         fontSize: "1.5rem"
+    }
+
+    const imageStyle = {
+        width: "32px",
+        height: "32px"
     }
 
     return (
@@ -22,10 +25,9 @@ function MyNav(props) {
                             <Nav.Link as={NavLink} to="/about">About</Nav.Link>
                             <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
                             <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
+                            <Nav.Link href="https://github.com/gboicheff"><Image style={imageStyle} src={GithubIcon} fluid/></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
-
-
                 </Container>
             </Navbar>
         </div>
