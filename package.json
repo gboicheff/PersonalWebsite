@@ -6,17 +6,9 @@
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "axios": "^0.21.1",
-    "bootstrap": "^5.1.3",
-    "chroma-js": "^2.1.2",
+    "bootstrap": "^5.1.3",    
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "lodash": "^4.17.21",
-    "lodash.intersectionby": "^4.7.0",
-    "lodash.samplesize": "^4.2.0",
-    "mongodb": "^3.6.9",
-    "mongoose": "^5.13.0",
-    "randomcolor": "^0.6.2",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.1",
     "react-copy-text": "^1.0.1",
@@ -25,8 +17,6 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
-    "react-select": "^4.3.1",
-    "react-select-plus": "^1.0.0-rc.3.patch12",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
@@ -35,12 +25,6 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "dev": "concurrently \"nodemon server/server.js\" \"npm run start\""
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
