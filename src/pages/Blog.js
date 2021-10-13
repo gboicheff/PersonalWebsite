@@ -1,5 +1,4 @@
-import {Button, Col, Container, Row} from "react-bootstrap";
-import {useEffect, useState} from "react";
+import {Col, Container, Row} from "react-bootstrap";
 
 function Blog() {
     const style={

@@ -22,9 +22,9 @@ function MyNav(props) {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
                     <Navbar.Collapse id="responsive-navbar-nav" className="justify-content-center">
                         <Nav activeKey={props.location.pathname} style={textStyle}>
-                            <Nav.Link as={NavLink} to="/about">About</Nav.Link>
-                            <Nav.Link as={NavLink} to="/projects">Projects</Nav.Link>
-                            <Nav.Link as={NavLink} to="/blog">Blog</Nav.Link>
+                            <Nav.Link as={NavLink} to="/about"><b>About</b></Nav.Link>
+                            <Nav.Link as={NavLink} to="/projects"><b>Projects</b></Nav.Link>
+                            <Nav.Link as={NavLink} to="/blog"><b>Blog</b></Nav.Link>
                             <Nav.Link href="https://github.com/gboicheff"><Image style={imageStyle} src={GithubIcon} fluid/></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

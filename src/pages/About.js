@@ -1,7 +1,6 @@
-import {Button, Col, Container, Row, Image, Badge} from "react-bootstrap";
+import {Col, Container, Row, Image} from "react-bootstrap";
 import me from "../imgs/me.jpg"
 import {Bio, Skills} from "../text/Bio.js"
-import GithubIcon from "../imgs/GitHub-Mark-Light-64px.png"
 
 function About() {
     const rowStyle = {
@@ -23,11 +22,6 @@ function About() {
     const skillStyle = {
         paddingBottom: "2vh"
     }
-
-    const iconStyle = {
-        paddingTop: "8vh"
-    }
-    
     
     return (
         <div className="About">
