@@ -20,6 +20,7 @@ function About() {
     }
     
     const skillStyle = {
+        textAlign: "left",
         paddingBottom: "2vh"
     }
     
