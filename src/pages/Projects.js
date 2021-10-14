@@ -1,17 +1,18 @@
 import {Col, Container, Row, Card, Button} from "react-bootstrap";
-import "../text/ProjectList.js"
+import { ProjectList } from "../text/ProjectList.js"
+import Project from "../components/Project.js"
+
 function Projects() {
     const style={
-        paddingTop: "20vh"
+        paddingTop: "12vh"
     }
+    const projects = ProjectList.map(project => {
+        return <Row><Project title={project.title} description={project.description} link={project.link} keywords={project.keywords}/></Row>
+    })
     return (
-        <div className="Blog">
-            <Container>
-                <Row className="justify-content-center" style={style}>
-                    <Col xs={6}>
-                        <h1>Coming soon...</h1>
-                    </Col>
-                </Row>
+        <div className="Project">
+            <Container style={style}>
+                {projects}
             </Container>
         </div>
     );
