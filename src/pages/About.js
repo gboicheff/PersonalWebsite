@@ -12,15 +12,15 @@ function About() {
     }
     const bioStyle = {
         textAlign: "left",
-        paddingBottom: "2vh"
+        paddingBottom: "1vh"
     }
 
     const skillHeaderStyle = {
-        paddingBottom: "2vh"
+        paddingBottom: "1vh"
     }
     
     const skillStyle = {
-        textAlign: "left",
+        // textAlign: "left",
         paddingBottom: "2vh"
     }
     
@@ -42,12 +42,22 @@ function About() {
                 </Row>
                 <Row className="justify-content-center">
                     <Col>
-                        <h2 style={skillHeaderStyle}><b>Skills</b></h2>
+                        <h3 style={skillHeaderStyle}><b>Languages</b></h3>
                     </Col>
                 </Row>
                 <Row className="justify-content-center">
                     <Col xs={10} md={8} style={skillStyle}>
-                        {Skills.join(", ")}
+                        {Skills.languages.join(", ")}
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    <Col>
+                        <h3 style={skillHeaderStyle}><b>Technologies</b></h3>
+                    </Col>
+                </Row>
+                <Row className="justify-content-center">
+                    <Col xs={10} md={8} style={skillStyle}>
+                        {Skills.technologies.join(", ")}
                     </Col>
                 </Row>
             </Container>
