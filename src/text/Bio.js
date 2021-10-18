@@ -5,7 +5,7 @@ const Bio = `I'm a senior computer science major studying at the University of F
 
 const Skills = {
   languages: ["Java", "Python", "Javscript, C++", "Julia"],
-  technologies: ["SQL", "Git", "Azure (AZ900)"],
+  technologies: ["SQL", "MongoDB", "Git", "React", "Azure (AZ900)"],
   libraries: ["numpy", "OpenCV", "nltk", "scikit-learn", "React"]
 
 }
