@@ -6,8 +6,8 @@ function Projects() {
     const style={
         paddingTop: "12vh"
     }
-    const projects = ProjectList.map(project => {
-        return <Row><Project title={project.title} description={project.description} link={project.link} keywords={project.keywords}/></Row>
+    const projects = ProjectList.map((project, index) => {
+        return <Row key={index}><Project index={index} title={project.title} description={project.description} link={project.link} keywords={project.keywords}/></Row>
     })
     return (
         <div className="Project">

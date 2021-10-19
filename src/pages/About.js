@@ -27,35 +27,35 @@ function About() {
     return (
         <div className="About">
             <Container>
-                <Row className="justify-content-center" style={rowStyle}>
+                <Row id="mypic" className="justify-content-center" style={rowStyle}>
                     <Col xs={6} md={4}>
                         <Image src={me} roundedCircle fluid/>
                     </Col>
                 </Row>
-                <Row>
+                <Row id="name">
                     <h1 style={nameStyle}><b>Grant Boicheff</b></h1>
                 </Row>
-                <Row className="justify-content-center">
+                <Row id="bio" className="justify-content-center">
                     <Col xs={10} md={8}>
                         <p style={bioStyle}>{Bio}</p>
                     </Col>
                 </Row>
-                <Row className="justify-content-center">
+                <Row id="languages header" className="justify-content-center">
                     <Col>
                         <h3 style={skillHeaderStyle}><b>Languages</b></h3>
                     </Col>
                 </Row>
-                <Row className="justify-content-center">
+                <Row id="languages" className="justify-content-center">
                     <Col xs={10} md={8} style={skillStyle}>
                         {Skills.languages.join(", ")}
                     </Col>
                 </Row>
-                <Row className="justify-content-center">
+                <Row id ="technologies header" className="justify-content-center">
                     <Col>
                         <h3 style={skillHeaderStyle}><b>Technologies</b></h3>
                     </Col>
                 </Row>
-                <Row className="justify-content-center">
+                <Row id = "technologies" className="justify-content-center">
                     <Col xs={10} md={8} style={skillStyle}>
                         {Skills.technologies.join(", ")}
                     </Col>
