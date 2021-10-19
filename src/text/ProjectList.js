@@ -12,6 +12,13 @@ const ProjectList = [
         link: "https://github.com/gboicheff/Lisp-Interpreter",
         keywords: ["Python"]
 
+    },
+    {
+        title: "Registration Helper Extension",
+        description: "A Chrome extension that improves the registration process for UF students.",
+        link: "https://github.com/gboicheff/RegistrationHelper",
+        keywords: ["Javascript", "Jquery"]
+
     },   
 ]
 
