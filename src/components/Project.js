@@ -19,7 +19,6 @@ function Project(props) {
                 <Card.Text>
                 {props.description}
                 </Card.Text>
-                {/* <Button variant="primary" href={props.link}>Check it out</Button> */}
             </Card.Body>
             <Card.Footer className="text-muted">{props.keywords.join(", ")}</Card.Footer>
             </Card>

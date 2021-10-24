@@ -1,5 +1,12 @@
 const ProjectList = [
     {
+        title: "Shared Steam Game Finder",
+        description: "An app for finding steam games to play with your friends.  Built using the MERN stack and deployed to heroku",
+        link: "https://github.com/gboicheff/gamefind",
+        keywords: ["Javascript", "MongoDB", "React"]
+
+    },
+    {
         title: "Lisp Interpreter",
         description: "A Lisp interpreter capable of running basic programs.  It supports variables, functions, loops, conditionals statements and more.",
         link: "https://github.com/gboicheff/Lisp-Interpreter",
