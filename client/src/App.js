@@ -15,9 +15,6 @@ function App() {
             <BrowserRouter>
                 <Container>
                     <MyNav></MyNav>
-                    <Route path="/">
-                        <Redirect to="/about"/>
-                    </Route>
                     <Route path="/about">
                         <About/>
                     </Route>
@@ -26,6 +23,9 @@ function App() {
                     </Route>
                     <Route path="/projects">
                         <Projects/>
+                    </Route>
+                    <Route exact path="/">
+                        <Redirect to="/about"/>
                     </Route>
                 </Container>
             </BrowserRouter>
