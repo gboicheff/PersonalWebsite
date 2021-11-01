@@ -1,7 +1,7 @@
 require('dotenv').config()
 const {join} = require('path')
 const connectDB = require('./models').connectDB
-const {Projects, Blogs} = require("./models").models
+const {Projects, Blogs, Languages, Technologies} = require("./models").models
 const { loadSchemaSync } = require('@graphql-tools/load')
 const { GraphQLFileLoader } = require('@graphql-tools/graphql-file-loader')
 const { ApolloServer} = require('apollo-server-express')
@@ -24,18 +24,18 @@ const resolvers = {
         const blogs = await Blogs.find()
         return blogs
       },
+      languages: async(parent, args, context, info) => {
+        const languages = await Languages.find()
+        return languages
+      },
+      technologies: async(parent, args, context, info) => {
+        const technologies = await Technologies.find()
+        return technologies
+      },
     },
 };
 
 const port = process.env.PORT || 5000;
-
-
-// const app = express()
-
-// // const server = new ApolloServer({ typeDefs, resolvers });
-// server.applyMiddleware({ app })
-
-
 
 async function startApolloServer(typeDefs, resolvers){
   const server = new ApolloServer({typeDefs, resolvers})

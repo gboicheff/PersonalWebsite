@@ -13,8 +13,17 @@ type Project {
     tags: [String]
 }
 
+type Language {
+    title: String
+}
+
+type Technology {
+    title: String
+}
+
 type Query {
     projects: [Project]
-    sayHello: String
     blogs: [Blog]
+    languages: [Language]
+    technologies: [Technology]
 }

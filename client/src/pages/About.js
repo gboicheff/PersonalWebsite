@@ -1,8 +1,30 @@
 import {Col, Container, Row, Image} from "react-bootstrap";
 import me from "../imgs/me.jpg"
 import {Bio, Skills} from "../text/Bio.js"
+import {useEffect, useState} from "react";
+import axios from 'axios';
 
 function About() {
+    const [languages, setLanguages] = useState([])
+    const [technologies, setTechnologies] = useState([])
+
+
+    useEffect(async() => {
+        const response = await axios({url: "graphql", method: "post", data:{
+            query: `
+            query getInfo {
+                languages {
+                    title
+                }
+                technologies {
+                  title
+                }
+              }
+            `
+        }})
+        setLanguages(response.data.data.languages)
+        setTechnologies(response.data.data.technologies)
+    }, [])
     const rowStyle = {
         paddingTop: "8vh",
         paddingBottom: "4vh"
@@ -20,7 +42,6 @@ function About() {
     }
     
     const skillStyle = {
-        // textAlign: "left",
         paddingBottom: "2vh"
     }
     
@@ -47,7 +68,7 @@ function About() {
                 </Row>
                 <Row id="languages" className="justify-content-center">
                     <Col xs={10} md={8} style={skillStyle}>
-                        {Skills.languages.join(", ")}
+                        {languages.map(language => language.title).join(", ")}
                     </Col>
                 </Row>
                 <Row id ="technologies header" className="justify-content-center">
@@ -57,7 +78,7 @@ function About() {
                 </Row>
                 <Row id = "technologies" className="justify-content-center">
                     <Col xs={10} md={8} style={skillStyle}>
-                        {Skills.technologies.join(", ")}
+                        {technologies.map(tech => tech.title).join(", ")}
                     </Col>
                 </Row>
             </Container>
