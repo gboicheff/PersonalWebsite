@@ -1,0 +1,20 @@
+type Blog {
+    title: String
+    description: String
+    text: String
+    tags: [String]
+}
+
+type Project {
+    title: String
+    description: String
+    github_link: String
+    deployment_link: String
+    tags: [String]
+}
+
+type Query {
+    projects: [Project]
+    sayHello: String
+    blogs: [Blog]
+}
