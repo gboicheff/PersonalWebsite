@@ -33,7 +33,8 @@ function Blogs() {
     return (
         <div className="Blogs">
             <Container>
-                {blogs.length > 0 ? blogsElems(blogs) : <h3>Loading blogs...</h3>}
+                {/* {blogs.length > 0 ? blogsElems(blogs) : <h3>Loading blogs...</h3>} */}
+                <h3 className="text-center">No blogs found</h3>
             </Container>
         </div>
     );
