@@ -3,6 +3,7 @@ type Blog {
     description: String
     text: String
     tags: [String]
+    id: String
 }
 
 type Project {
@@ -26,4 +27,13 @@ type Query {
     blogs: [Blog]
     languages: [Language]
     technologies: [Technology]
+    getBlog(id: String!): Blog
+    getProject(title: String!): Project
+}
+
+type Mutation {
+    createProject(title: String!, description: String!, github_link: String, deployment_link: String, tags: [String]): String
+    updateProject(title: String!, description: String, github_link: String, deployment_link: String, tags: [String]): String
+    createBlog(title: String!, description: String!, text: String!, tags: [String], id: String): String
+    updateBlog(title: String!, description: String, text: String, tags: [String], id: String!): String
 }

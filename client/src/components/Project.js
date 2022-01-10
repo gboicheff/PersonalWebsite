@@ -13,14 +13,14 @@ function Project(props) {
     }
     return (
         <div className="Project" style={style}>
-            <Card className="text-center" bg="dark" variant="dark">
+            <Card bg="dark" variant="dark" className="text-center">
             <Card.Body>
                 <Card.Title><b><h2>{props.title}<a href={props.link}><Image style={imageStyle} src={GithubIcon} fluid/></a></h2></b></Card.Title>
                 <Card.Text>
                 {props.description}
                 </Card.Text>
             </Card.Body>
-            <Card.Footer className="text-muted">{props.keywords.join(", ")}</Card.Footer>
+            <Card.Footer className="text-muted" >{props.keywords.join(", ")}</Card.Footer>
             </Card>
         </div>
     );

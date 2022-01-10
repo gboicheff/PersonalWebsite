@@ -22,9 +22,6 @@ function Projects() {
         setProjects(response.data.data.projects)
     }, [])
 
-    const style={
-        paddingTop: "12vh"
-    }
 
     const projectsElems = (projects) => {
         return projects.map((project, index) => {
@@ -33,8 +30,8 @@ function Projects() {
     }
 
     return (
-        <div className="Project">
-            <Container style={style}>
+        <div className="Projects">
+            <Container>
                 {projects.length > 0 ? projectsElems(projects) : <h3>Loading projects...</h3>}
             </Container>
         </div>

@@ -15,8 +15,12 @@ function MyNav(props) {
         height: "32px"
     }
 
+    const style = {
+        marginBottom: "10vh"
+    }
+
     return (
-        <div className="Nav">
+        <div className="Nav" style={style}>
             <Navbar collapseOnSelect bg="dark" fixed="top" expand="sm" variant="dark">
                 <Container>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav"/>

@@ -26,11 +26,11 @@ function About() {
         setTechnologies(response.data.data.technologies)
     }, [])
     const rowStyle = {
-        paddingTop: "8vh",
         paddingBottom: "4vh"
     }
     const nameStyle = {
-        paddingBottom: "2vh"
+        paddingBottom: "2vh",
+        textAlign: 'center'
     }
     const bioStyle = {
         textAlign: "left",
@@ -38,11 +38,13 @@ function About() {
     }
 
     const skillHeaderStyle = {
-        paddingBottom: "1vh"
+        paddingBottom: "1vh",
+        textAlign: 'center'
     }
     
     const skillStyle = {
-        paddingBottom: "2vh"
+        paddingBottom: "2vh",
+        textAlign: 'center'
     }
     
     return (
