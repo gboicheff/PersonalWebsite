@@ -28,7 +28,7 @@ function MyNav(props) {
                         <Nav activeKey={props.location.pathname} style={textStyle}>
                             <Nav.Link as={NavLink} to="/about"><b>About</b></Nav.Link>
                             <Nav.Link as={NavLink} to="/projects"><b>Projects</b></Nav.Link>
-                            <Nav.Link as={NavLink} to="/blog"><b>Blog</b></Nav.Link>
+                            <Nav.Link as={NavLink} to="/blog" disabled><b>Blog</b></Nav.Link>
                             <Nav.Link href="https://github.com/gboicheff"><Image style={imageStyle} src={GithubIcon} fluid/></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
